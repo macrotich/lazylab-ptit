@@ -4,30 +4,36 @@
 
 #### Bước 1: 
 Trên terminal **`mycomputer`** nhập :
-   ```bash nmap -p 2000-3000 172.25.0.2
-
+```
+   nmap -p 2000-3000 172.25.0.2
+```
 #### Bước 2:
 Trên terminal **`router`**, nhập lệnh:
+```
     sudo tcpdump -i any -X tcp
-
+```
     Nhấn Ctrl + C
-
+```
     sudo tshark -T fields -e telnet.data -i eth1
-
+```
     Nhấn Ctrl + C
 
 #### Bước 3:
 Trên terminal **`mycomputer`** nhập lệnh:
+```
     ssh -p 2907 ubuntu@172.25.0.2
-
+```
     yes
 
 Nhập mật khẩu:
+```
     8064f9ecdefc9b678771fa5fee4cb44d
+```
 
 Nhập:
+```
     cat secretfile.txt
-
+```
 
 
 ## 📌 Bản quyền & Ghi công (Credits)
