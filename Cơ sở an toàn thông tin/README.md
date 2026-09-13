@@ -6,3 +6,7 @@
 >   * Lỡ tay gõ nhầm lệnh làm sập máy ảo cá nhân, hỏng hệ điều hành hoặc bay dữ liệu.
 >   * Sử dụng kiến thức/script sai mục đích, vi phạm quy chế học vụ hoặc vi phạm an ninh mạng ngoài môi trường phòng lab được cấp phép.
 > * **Khuyến cáo:** Dùng não trước khi ấn `Enter`. Đọc kỹ hướng dẫn sử dụng trước khi dùng.
+
+
+> *"Lười một cách thông minh, chia sẻ để cùng tiến bộ."*  
+> **© lazylab-ptit — All rights reserved.**
