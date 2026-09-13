@@ -12,17 +12,18 @@ Trên terminal **`router`**, nhập lệnh:
 ```
     sudo tcpdump -i any -X tcp
 ```
-    Nhấn Ctrl + C
+    (Nhấn Ctrl + C)
 ```
     sudo tshark -T fields -e telnet.data -i eth1
 ```
-    Nhấn Ctrl + C
+    (Nhấn Ctrl + C)
 
 #### Bước 3:
 Trên terminal **`mycomputer`** nhập lệnh:
 ```
     ssh -p 2907 ubuntu@172.25.0.2
 ```
+Khi được hỏi thì nhập:
     yes
 
 Nhập mật khẩu:
