@@ -9,4 +9,4 @@
 
 
 > *"Lười một cách thông minh, chia sẻ để cùng tiến bộ."*  
-> **© lazylab-ptit — All rights reserved.**
+> **© lazylab-ptit — Released under the MIT License**
