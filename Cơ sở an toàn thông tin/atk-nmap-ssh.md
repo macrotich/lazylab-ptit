@@ -4,7 +4,7 @@
 
 #### Bước 1: 
 Trên terminal **`mycomputer`** nhập :
-    nmap -p 2000-3000 172.25.0.2
+   ```bash nmap -p 2000-3000 172.25.0.2
 
 #### Bước 2:
 Trên terminal **`router`**, nhập lệnh:
