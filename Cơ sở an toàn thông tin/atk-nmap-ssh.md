@@ -44,4 +44,4 @@ Nhập:
 * **Quy định trích dẫn:** Mọi hành vi sao chép một phần hoặc toàn bộ tài liệu vui lòng **giữ nguyên nguồn trích dẫn** và liên kết gốc của dự án `lazylab-ptit`. Nghiêm cấm hành vi tự nhận tác quyền hoặc sử dụng vào mục đích thương mại, mua bán tài liệu dưới mọi hình thức.
 
 > *"Lười một cách thông minh, chia sẻ để cùng tiến bộ."*  
-> **© lazylab-ptit — All rights reserved.**
+> **© lazylab-ptit — Released under the MIT License**
