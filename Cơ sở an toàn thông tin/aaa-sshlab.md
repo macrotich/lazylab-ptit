@@ -7,7 +7,7 @@ Trên terminal **`client`** nhập :
 ```
    ssh-keygen -t rsa
 ```
-
+(Nhấn Enter 3 lần)
 ```
     ssh-copy-id -i ~/.ssh/id_rsa.pub 172.20.0.3
 ```
