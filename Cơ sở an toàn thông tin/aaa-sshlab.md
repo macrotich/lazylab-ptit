@@ -13,6 +13,10 @@ Trên terminal **`client`** nhập :
 ```
 Khi được hỏi thì nhập:
     yes
+Mật khẩu nhập:
+```
+   
+```
 #### Bước 2:
 Trên terminal **``**, nhập lệnh:
 ```
