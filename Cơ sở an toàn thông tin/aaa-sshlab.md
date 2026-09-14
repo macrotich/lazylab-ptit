@@ -11,11 +11,10 @@ Trên terminal **`client`** nhập :
 ```
     ssh-copy-id -i ~/.ssh/id_rsa.pub 172.20.0.3
 ```
-Khi được hỏi thì nhập:
-    yes
+Khi được hỏi thì nhập: yes
 Mật khẩu nhập:
 ```
-   
+   ubuntu 
 ```
 #### Bước 2:
 Trên terminal **``**, nhập lệnh:
