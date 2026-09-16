@@ -20,7 +20,7 @@ Mật khẩu nhập:
    ubuntu 
 ```
 #### Bước 2:
-Trên terminal **``**, nhập lệnh:
+Trên terminal **`client`**, nhập lệnh:
 ```
     ssh ubuntu@172.20.0.3
 ```
