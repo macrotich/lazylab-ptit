@@ -19,7 +19,7 @@ Trên terminal **`2`** nhập :
 ```
     password4alice
 ```
-Trên terminal **``** nhập :
+Trên terminal **`3`** nhập :
 ```
    harry
 ```
