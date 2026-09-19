@@ -5,71 +5,71 @@
 #### Bước 1: 
 Trên terminal **`1`** nhập :
 ```
-   bob
+bob
 ```
 
 ```
-    password4bob
+password4bob
 ```
 Trên terminal **`2`** nhập :
 ```
-   alice
+alice
 ```
 
 ```
-    password4alice
+password4alice
 ```
 Trên terminal **`3`** nhập :
 ```
-   harry
+harry
 ```
 
 ```
-    password4harry
+password4harry
 ```
 
 #### Bước 2:
 Trên terminal **`bob`**, nhập lệnh:
 ```
-    setfacl -m user:alice:r /shared_data/bob/bobstuff.txt
+setfacl -m user:alice:r /shared_data/bob/bobstuff.txt
 ```
 Trên terminal **`alice`**, nhập lệnh:
 ```
-    cat /shared_data/bob/bobstuff.txt
+cat /shared_data/bob/bobstuff.txt
 ```  
 
 #### Bước 3:
 Trên terminal **`alice`**, nhập lệnh:
 ```
-    setfacl -d -m user:bob:r /shared_data/alice
+setfacl -d -m user:bob:r /shared_data/alice
 ```
 
 ```
-    setfacl -d -m o::--- /shared_data/alice
+setfacl -d -m o::--- /shared_data/alice
 ```
 ```
-    touch /shared_data/alice/test1.txt
+touch /shared_data/alice/test1.txt
 ```
 Trên terminal **`bob`**, nhập lệnh:
 ```
-    cat /shared_data/alice/test1.txt
+cat /shared_data/alice/test1.txt
 ``` 
 
 #### Bước 4:
 Trên terminal **`bob`**, nhập lệnh:
 ```
-    nano /shared_data/bob/fun
+nano /shared_data/bob/fun
 ```
 Chèn thêm dòng sau vào cuối:
 ```
-    cp /shared_data/accounting.txt /shared_data/alice/stolen.txt
-    setfacl -m u:bob:r /shared_data/alice/stolen.txt
+cp /shared_data/accounting.txt /shared_data/alice/stolen.txt
+setfacl -m u:bob:r /shared_data/alice/stolen.txt
 ```
 (Nhấn Ctrl+O rồi Ctrl+X)
 
 Trên terminal **`alice`**, nhập lệnh:
 ```
-    /shared_data/bob/fun
+/shared_data/bob/fun
 ``` 
 
 ## 📌 Bản quyền & Ghi công (Credits)
