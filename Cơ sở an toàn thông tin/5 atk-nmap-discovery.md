@@ -23,9 +23,6 @@ Mật khẩu:
 ubuntu
 ```
 ```
-ubuntu
-```
-```
 cat friedshrimp.txt
 ```
 
