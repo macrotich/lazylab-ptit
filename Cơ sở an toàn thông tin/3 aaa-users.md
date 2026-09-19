@@ -129,7 +129,38 @@ test
 ```
 cat /tmp/tmpfile.txt
 ```
+```
+eggcheck /tmp/tmpfile.txt
+```
+#### Bước 5:
+Trên terminal **`1`**, nhập lệnh:
+```
+sudo useradd -m lisa
+```
+   
+```
+sudo passwd lisa
+```
+Nhập mật khẩu:
+```
+test
+```
+```
+sudo usermod -a -G admin lisa
+```
 
+Trên terminal **`2`**, nhập lệnh:
+```
+lisa
+```
+Nhập mật khẩu:
+```
+test
+```
+
+```
+sudo sudo userdel bob
+```
 
 ## 📌 Bản quyền & Ghi công (Credits)
 
