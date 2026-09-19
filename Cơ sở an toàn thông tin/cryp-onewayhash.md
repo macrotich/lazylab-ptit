@@ -4,41 +4,41 @@
 
 #### Bước 1: 
 ```
-   openssl dgst -md5 filetodigest.txt
+openssl dgst -md5 filetodigest.txt
 ```
 ```
-   openssl dgst -sha1 filetodigest.txt
+openssl dgst -sha1 filetodigest.txt
 ```
 ```
-   openssl dgst -sha256 filetodigest.txt
+openssl dgst -sha256 filetodigest.txt
 ```
 
 #### Bước 2:
 ```
-   openssl dgst -md5 -hmac "testing" filetodigest.txt
+openssl dgst -md5 -hmac "testing" filetodigest.txt
 ```
 ```
-   openssl dgst -sha1 -hmac "testing" filetodigest.txt
+openssl dgst -sha1 -hmac "testing" filetodigest.txt
 ```
 ```
-   openssl dgst -sha256 -hmac "testing" filetodigest.txt
+openssl dgst -sha256 -hmac "testing" filetodigest.txt
 ```
 #### Bước 3:
 ```
-   echo "testingagain" > edit-this-file.txt
+echo "testingagain" > edit-this-file.txt
 ```
 ```
-    cat edit-this-file.txt
+cat edit-this-file.txt
 ```
 ```
-    openssl dgst -md5 edit-this-file.txt
+openssl dgst -md5 edit-this-file.txt
 ```
 ```
-    hexedit edit-this-file.txt
+hexedit edit-this-file.txt
 ```
 Sửa một ký tự bất kỳ xong nhấn cltr+x
 ```
-    openssl dgst -sha256 edit-this-file.txt
+openssl dgst -sha256 edit-this-file.txt
 ```
 
 
