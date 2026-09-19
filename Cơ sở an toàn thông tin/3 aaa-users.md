@@ -5,126 +5,126 @@
 #### Bước 1: 
 Trên terminal **`1`** nhập :
 ```
-   admin
+admin
 ```
 Nhập mật khẩu:
 ```
-    password123
+password123
 ```
 
 #### Bước 2:
 Trên terminal **`1`**, nhập lệnh:
 ```
-    sudo useradd -m bob
+sudo useradd -m bob
 ```
    
 ```
-   sudo passwd bob
+sudo passwd bob
 ```
 Nhập mật khẩu:
 ```
-    test
+test
 ```
 Trên terminal **`2`**, nhập lệnh:
 ```
-   bob
+bob
 ```
 Nhập mật khẩu:
 ```
-    test
+test
 ```
 
 ```
-    exit
+exit
 ```
 
 #### Bước 3:
 Trên terminal **`1`**, nhập lệnh:
 ```
-    sudo useradd -m mary
+sudo useradd -m mary
 ```
    
 ```
-   sudo passwd mary
+sudo passwd mary
 ```
 Nhập mật khẩu:
 ```
-    test
+test
 ```
 
 ```
-   usermod -a -G bakers mary
+usermod -a -G bakers mary
 ```
 Trên terminal **`2`**, nhập lệnh:
 ```
-    mary
+mary
 ```
 Nhập mật khẩu:
 ```
-    test
+test
 ```
 
 ```
-    cat /shared_stuff/tarts.txt
+cat /shared_stuff/tarts.txt
 ```
 
 ```
-    eggcheck /shared_stuff/tarts.txt
+eggcheck /shared_stuff/tarts.txt
 ```
 
 ```
-    exit
+exit
 ```
 
 #### Bước 4:
 Trên terminal **`2`**, nhập lệnh:
 ```
-   bob
+bob
 ```
 Nhập mật khẩu:
 ```
-    test
+test
 ```
 
 ```
-    cat /shared_stuff/tarts.txt
+cat /shared_stuff/tarts.txt
 ```
 
 ```
-    eggcheck /shared_stuff/tarts.txt
+eggcheck /shared_stuff/tarts.txt
 ```
 
 ```
-    exit
+exit
 ```
 
 Trên terminal **`2`**, nhập lệnh:
 ```
-    mary
+mary
 ```
 Nhập mật khẩu:
 ```
-    test
+test
 ```
 
 ```
-    eggcheck /shared_stuff/tarts.txt
+eggcheck /shared_stuff/tarts.txt
 
 ```
 ```
-    exit
+exit
 ```
 Trên terminal **`2`**, nhập lệnh:
 ```
-   bob
+bob
 ```
 Nhập mật khẩu:
 ```
-    test
+test
 ```
 
 ```
-    cat /tmp/tmpfile.txt
+cat /tmp/tmpfile.txt
 ```
 
 
