@@ -5,28 +5,28 @@
 #### Bước 1: 
 Trên terminal **`client`** nhập :
 ```
-   ssh-keygen -t rsa
+ssh-keygen -t rsa
 ```
 (Nhấn Enter 3 lần)
 ```
-    ssh-copy-id -i ~/.ssh/id_rsa.pub 172.20.0.3
+ssh-copy-id -i ~/.ssh/id_rsa.pub 172.20.0.3
 ```
 Khi được hỏi thì nhập:
 ```
-   yes
+yes
 ```
 Mật khẩu nhập:
 ```
-   ubuntu 
+ubuntu 
 ```
 #### Bước 2:
 Trên terminal **`client`**, nhập lệnh:
 ```
-    ssh ubuntu@172.20.0.3
+ssh ubuntu@172.20.0.3
 ```
    
 ```
-    cat filetoview.txt
+cat filetoview.txt
 ```
 
 
