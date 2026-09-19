@@ -5,26 +5,26 @@
 #### Bước 1: 
 Trên terminal **`server`** nhập :
 ```
-   mysql -u root -pseedubuntu
+mysql -u root -pseedubuntu
 ```
 
 ```
-    use Users;
+use Users;
 ```
 
 ```
-    show tables;
+show tables;
 ```
 
 ```
-    SELECT * FROM credential;
+SELECT * FROM credential;
 ```
 
 
 #### Bước 2:
 Trên terminal **`client`**, nhập lệnh:
 ```
-    curl 'http://www.SEEDLabSQLInjection.com/unsafe_credential.php?EID=10000&Password=111'
+curl 'http://www.SEEDLabSQLInjection.com/unsafe_credential.php?EID=10000&Password=111'
 ```
 
 ## 📌 Bản quyền & Ghi công (Credits)
