@@ -5,39 +5,39 @@
 #### Bước 1: 
 Trên terminal **`dns`** nhập :
 ```
-   sudo nano /var/named/example.com.zone
+sudo nano /var/named/example.com.zone
 ```
 Chèn thêm dòng sau vào cuối:
 ```
-    ws3     IN      A       192.168.0.3
+ws3     IN      A       192.168.0.3
 ```
 (Nhấn Ctrl+O rồi Ctrl+X)
 ```
-    sudo nano /var/named/192.168.0.0
+sudo nano /var/named/192.168.0.0
 ```
 Chèn thêm dòng sau vào cuối:
 ```
-    13      IN      PTR     ws3
+13      IN      PTR     ws3
 ```
 (Nhấn Ctrl+O rồi Ctrl+X)
 ```
-    sudo systemctl restart bind9
+sudo systemctl restart bind9
 ```
 #### Bước 2:
 Trên terminal **`ws1`**, nhập lệnh:
 ```
-    ping -c 3 ws3
+ping -c 3 ws3
 ```
 
 #### Bước 3:
 Trên terminal **`ws3`** nhập lệnh:
 ```
-    sudo nano /etc/resolv.conf
+sudo nano /etc/resolv.conf
 ```
 Điền dòng sau vô:
 ```
-    search example.com
-    nameserver 192.168.0.3
+search example.com
+nameserver 192.168.0.3
 ```
 
 
