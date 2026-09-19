@@ -99,7 +99,7 @@ sudo useradd -m lisa
 ```
 sudo passwd lisa
 ```
-Nhập mật khẩu:
+Nhập mật khẩu(nhập 2 lần):
 ```
 test
 ```
@@ -119,7 +119,9 @@ test
 ```
 sudo sudo userdel bob
 ```
-
+```
+test
+```
 ## 📌 Bản quyền & Ghi công (Credits)
 
 * **Tác quyền:** Tài liệu và nội dung giải pháp này thuộc dự án **lazylab-ptit** (Biên soạn bởi **Mạc Rô Tích**).
