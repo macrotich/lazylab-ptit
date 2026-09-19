@@ -17,11 +17,14 @@ Trên terminal **`1`**, nhập lệnh:
 ```
 sudo useradd -m bob
 ```
-   
+Nhập mật khẩu:
+```
+password123
+```   
 ```
 sudo passwd bob
 ```
-Nhập mật khẩu:
+Nhập mật khẩu(nhập 2 lần):
 ```
 test
 ```
@@ -47,13 +50,13 @@ sudo useradd -m mary
 ```
 sudo passwd mary
 ```
-Nhập mật khẩu:
+Nhập mật khẩu(nhập 2 lần):
 ```
 test
 ```
 
 ```
-usermod -a -G bakers mary
+sudo usermod -a -G bakers mary
 ```
 Trên terminal **`2`**, nhập lệnh:
 ```
