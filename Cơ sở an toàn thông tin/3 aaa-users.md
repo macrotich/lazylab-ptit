@@ -28,18 +28,7 @@ Nhập mật khẩu(nhập 2 lần):
 ```
 test
 ```
-Trên terminal **`2`**, nhập lệnh:
-```
-bob
-```
-Nhập mật khẩu:
-```
-test
-```
 
-```
-exit
-```
 
 #### Bước 3:
 Trên terminal **`1`**, nhập lệnh:
@@ -94,44 +83,13 @@ cat /shared_stuff/tarts.txt
 ```
 
 ```
-eggcheck /shared_stuff/tarts.txt
-```
-
-```
-exit
-```
-
-Trên terminal **`2`**, nhập lệnh:
-```
-mary
-```
-Nhập mật khẩu:
-```
-test
-```
-
-```
-eggcheck /shared_stuff/tarts.txt
-
-```
-```
-exit
-```
-Trên terminal **`2`**, nhập lệnh:
-```
-bob
-```
-Nhập mật khẩu:
-```
-test
-```
-
-```
 cat /tmp/tmpfile.txt
 ```
+
 ```
-eggcheck /tmp/tmpfile.txt
+exit
 ```
+
 #### Bước 5:
 Trên terminal **`1`**, nhập lệnh:
 ```
