@@ -39,7 +39,9 @@ sudo nano /etc/resolv.conf
 search example.com
 nameserver 192.168.0.3
 ```
-
+```
+ping -c 3 ws1
+```
 
 ## 📌 Bản quyền & Ghi công (Credits)
 
