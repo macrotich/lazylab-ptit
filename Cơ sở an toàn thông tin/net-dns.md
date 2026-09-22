@@ -9,7 +9,7 @@ sudo nano /var/named/example.com.zone
 ```
 Chèn thêm dòng sau vào cuối:
 ```
-ws3     IN      A       192.168.0.3
+ws3     IN      A       192.168.0.13
 ```
 (Nhấn Ctrl+O rồi Ctrl+X)
 ```
