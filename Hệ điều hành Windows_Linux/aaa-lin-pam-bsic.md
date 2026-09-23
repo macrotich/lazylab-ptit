@@ -61,7 +61,7 @@ account required pam_tally2.so
 ```
 su user1
 ```
-Nhập mật khẩu(3 lần):
+Nhập mật khẩu(4 lần):
 ```
 haha
 ```
