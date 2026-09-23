@@ -15,22 +15,43 @@ sudo tail /var/log/auth.log
 ```
 
 #### Bước 2:
-Trên terminal **`ws1`**, nhập lệnh:
+Trên terminal nhập lệnh:
 ```
-ping -c 3 ws3
+sudo passwd user1
 ```
-
+Nhập mật khẩu(2 lần):
+```
+test
+```
+```
+sudo nano /etc/pam.d/common-auth
+```
+Xóa dấu **`#`** dòng **`auth    [success=1 default=ignore]    pam_unix.so nullok_secure`**
+```
+su user1
+```
+Nhập mật khẩu:
+```
+test
+```
+```
+exit
+```
+```
+sudo tail /var/log/auth.log
+```
 #### Bước 3:
-Trên terminal **`ws3`** nhập lệnh:
+Trên terminal nhập lệnh:
 ```
-sudo nano /etc/resolv.conf
+sudo nano /etc/pam.d/common-auth
 ```
-Điền dòng sau vô:
+Điền dòng sau vô trên dòng có **`pam_unix.so`**:
 ```
-search example.com
-nameserver 192.168.0.3
+auth required pam_tally2.so deny=3 unlock_time=600
 ```
-
+```
+sudo nano /etc/pam.d/common-account
+```
 
 ## 📌 Bản quyền & Ghi công (Credits)
 
