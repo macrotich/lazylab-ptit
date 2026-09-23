@@ -3,25 +3,18 @@
 ## Các bước thực hiện & Chuỗi lệnh (Solution)
 
 #### Bước 1: 
-Trên terminal **`dns`** nhập :
+Trên terminal nhập :
 ```
-sudo nano /var/named/example.com.zone
+sudo setfacl -m u:user1:rwx project
 ```
-Chèn thêm dòng sau vào cuối:
 ```
-ws3     IN      A       192.168.0.3
+sudo setfacl -m u:user2:r project
 ```
-(Nhấn Ctrl+O rồi Ctrl+X)
 ```
-sudo nano /var/named/192.168.0.0
+sudo setfacl -m u:user3:rx project
 ```
-Chèn thêm dòng sau vào cuối:
 ```
-13      IN      PTR     ws3
-```
-(Nhấn Ctrl+O rồi Ctrl+X)
-```
-sudo systemctl restart bind9
+sudo getfacl project
 ```
 #### Bước 2:
 Trên terminal **`ws1`**, nhập lệnh:
