@@ -17,23 +17,35 @@ sudo setfacl -m u:user3:rx project
 sudo getfacl project
 ```
 #### Bước 2:
-Trên terminal **`ws1`**, nhập lệnh:
+Trên terminal nhập :
 ```
-ping -c 3 ws3
+sudo setfacl -dR -m u:user1:rwx project
 ```
-
+```
+sudo setfacl -dR -m u:user3:rx project
+```
+```
+sudo setfacl -dR -m u:user2:r project
+```
+```
+sudo getfacl project
+```
 #### Bước 3:
-Trên terminal **`ws3`** nhập lệnh:
+Trên terminal nhập :
 ```
-sudo nano /etc/resolv.conf
+sudo getfacl project/subdir1 project/file1
 ```
-Điền dòng sau vô:
+#### Bước 4:
+Trên terminal nhập :
 ```
-search example.com
-nameserver 192.168.0.3
+sudo setfacl -dR -m u:user2:rwx project
 ```
-
-
+```
+sudo getfacl project
+```
+```
+sudo getfacl project/subdir2 project/file2
+```
 ## 📌 Bản quyền & Ghi công (Credits)
 
 * **Tác quyền:** Tài liệu và nội dung giải pháp này thuộc dự án **lazylab-ptit** (Biên soạn bởi **Mạc Rô Tích**).
