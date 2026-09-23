@@ -3,26 +3,17 @@
 ## Các bước thực hiện & Chuỗi lệnh (Solution)
 
 #### Bước 1: 
-Trên terminal **`dns`** nhập :
+Trên terminal nhập :
 ```
-sudo nano /var/named/example.com.zone
+ls -la /etc/pam.d/
 ```
-Chèn thêm dòng sau vào cuối:
 ```
-ws3     IN      A       192.168.0.3
+cat /etc/pam.d/common-auth
 ```
-(Nhấn Ctrl+O rồi Ctrl+X)
 ```
-sudo nano /var/named/192.168.0.0
+sudo tail /var/log/auth.log
 ```
-Chèn thêm dòng sau vào cuối:
-```
-13      IN      PTR     ws3
-```
-(Nhấn Ctrl+O rồi Ctrl+X)
-```
-sudo systemctl restart bind9
-```
+
 #### Bước 2:
 Trên terminal **`ws1`**, nhập lệnh:
 ```
