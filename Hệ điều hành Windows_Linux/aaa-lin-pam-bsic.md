@@ -49,10 +49,25 @@ sudo nano /etc/pam.d/common-auth
 ```
 auth required pam_tally2.so deny=3 unlock_time=600
 ```
+(Nhấn Ctrl+O rồi Ctrl+X)
 ```
 sudo nano /etc/pam.d/common-account
 ```
-
+Thêm dòng sau trên dòng có **`pam_unix.so`**:
+```
+account required pam_tally2.so
+```
+(Nhấn Ctrl+O rồi Ctrl+X)
+```
+su user1
+```
+Nhập mật khẩu(3 lần):
+```
+haha
+```
+```
+sudo pam_tally2 --user user1 --reset
+```
 ## 📌 Bản quyền & Ghi công (Credits)
 
 * **Tác quyền:** Tài liệu và nội dung giải pháp này thuộc dự án **lazylab-ptit** (Biên soạn bởi **Mạc Rô Tích**).
