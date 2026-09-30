@@ -39,6 +39,9 @@ dd if=cipher_cbc.bin of=cipher_corrupt.bin bs=1 count=16
 #### Bước 3:
 Trên terminal nhập lệnh:
 ```
+hexedit cipher_cbc.bin
+```
+```
 ghex ENCRYPTEDFILE
 ```
 
