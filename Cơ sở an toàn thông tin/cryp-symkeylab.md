@@ -5,30 +5,40 @@
 #### Bước 1: 
 Trên terminal nhập :
 ```
-sudo nano /var/named/example.com.zone
+echo "doan van ban" > plain.txt
 ```
-Chèn thêm dòng sau vào cuối:
 ```
-ws3     IN      A       192.168.0.3
+openssl CIPHER -e -in plain.txt -out cipher.txt -K KEY -iv IV
 ```
-(Nhấn Ctrl+O rồi Ctrl+X)
 ```
-sudo nano /var/named/192.168.0.0
+hexdump -C FILENAME
 ```
-Chèn thêm dòng sau vào cuối:
 ```
-13      IN      PTR     ws3
+openssl CIPHER -d -in cipher.txt -out plainmod.txt -K KEY -iv IV
 ```
-(Nhấn Ctrl+O rồi Ctrl+X)
 ```
-sudo systemctl restart bind9
+diff -a plain.txt plainmod.txt
 ```
 #### Bước 2:
-Trên terminal **`ws1`**, nhập lệnh:
+Trên terminal  nhập lệnh:
 ```
-ping -c 3 ws3
+./start_firefox &
 ```
-
+```
+dd if=nps-logo.bmp of=nps-logo_mod.bmp bs=1 count=54 conv=notrunc
+```
+```
+openssl enc -aes-128-ecb -e -in nps-logo.bmp -out nps-logo_ecb.bmp -K 00112233445566778899aabbccddeeff
+```
+```
+openssl enc -aes-128-cbc -e -in nps-logo.bmp -out nps-logo_cbc.bmp -K 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f10
+```
+```
+openssl enc -aes-128-cfb -e -in nps-logo.bmp -out nps-logo_cfb.bmp -K 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f10
+```
+```
+openssl enc -aes-128-ofb -e -in nps-logo.bmp -out nps-logo_ofb.bmp -K 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f10
+```
 #### Bước 3:
 Trên terminal **`ws3`** nhập lệnh:
 ```
