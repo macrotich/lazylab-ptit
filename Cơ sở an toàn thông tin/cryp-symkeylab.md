@@ -3,7 +3,7 @@
 ## Các bước thực hiện & Chuỗi lệnh (Solution)
 
 #### Bước 1: 
-Trên terminal **`dns`** nhập :
+Trên terminal nhập :
 ```
 sudo nano /var/named/example.com.zone
 ```
