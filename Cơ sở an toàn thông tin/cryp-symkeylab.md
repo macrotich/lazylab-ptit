@@ -8,13 +8,10 @@ Trên terminal nhập :
 echo "doan van ban" > plain.txt
 ```
 ```
-openssl CIPHER -e -in plain.txt -out cipher.txt -K KEY -iv IV
+openssl aes-128-cbc -e -in plain.txt -out cipher.txt -K 0123456789ABCDEF0123456789ABCDEF -iv 00000000000000000000000000000000
 ```
 ```
 hexdump -C cipher.txt
-```
-```
-openssl CIPHER -d -in cipher.txt -out plainmod.txt -K KEY -iv IV
 ```
 ```
 diff -a plain.txt plainmod.txt
@@ -28,27 +25,23 @@ Trên terminal  nhập lệnh:
 dd if=nps-logo.bmp of=nps-logo_mod.bmp bs=1 count=54 conv=notrunc
 ```
 ```
-openssl -aes-128-ecb -e -in nps-logo.bmp -out nps-logo_ecb.bmp -K 00112233445566778899aabbccddeeff
+openssl aes-128-ecb -e -in plain.txt -out cipher_ecb.bin -K 00112233445566778899aabbccddeeff
 ```
 ```
-openssl -aes-128-cbc -e -in nps-logo.bmp -out nps-logo_cbc.bmp -K 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f10
+openssl aes-128-cbc -e -in plain.txt -out cipher_cbc.bin -K 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f10
 ```
 ```
-openssl -aes-128-cfb -e -in nps-logo.bmp -out nps-logo_cfb.bmp -K 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f10
+openssl aes-128-ofb -e -in plain.txt -out cipher_ofb.bin -K 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f10
 ```
 ```
-openssl -aes-128-ofb -e -in nps-logo.bmp -out nps-logo_ofb.bmp -K 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f10
+dd if=cipher_cbc.bin of=cipher_corrupt.bin bs=1 count=16
 ```
 #### Bước 3:
-Trên terminal **`ws3`** nhập lệnh:
+Trên terminal nhập lệnh:
 ```
-sudo nano /etc/resolv.conf
+ghex ENCRYPTEDFILE
 ```
-Điền dòng sau vô:
-```
-search example.com
-nameserver 192.168.0.3
-```
+
 
 
 ## 📌 Bản quyền & Ghi công (Credits)
