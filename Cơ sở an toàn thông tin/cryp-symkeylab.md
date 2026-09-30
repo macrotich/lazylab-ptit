@@ -19,12 +19,6 @@ diff -a plain.txt plainmod.txt
 #### Bước 2:
 Trên terminal  nhập lệnh:
 ```
-./start_firefox &
-```
-```
-dd if=nps-logo.bmp of=nps-logo_mod.bmp bs=1 count=54 conv=notrunc
-```
-```
 openssl aes-128-ecb -e -in plain.txt -out cipher_ecb.bin -K 00112233445566778899aabbccddeeff
 ```
 ```
@@ -41,6 +35,7 @@ Trên terminal nhập lệnh:
 ```
 hexedit cipher_cbc.bin
 ```
+(Nhấn Ctrl+X)
 ```
 ghex ENCRYPTEDFILE
 ```
