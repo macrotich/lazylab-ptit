@@ -44,7 +44,15 @@ hank21
 ```
 exit
 ```
-
+#### Bước 4:
+Trên terminal **`client`** nhập :
+```
+sudo ifconfig eth0 172.20.0.9
+```
+```
+ ./bot.py tony
+```
+(Nhấn Ctrl+C)
 ## 📌 Bản quyền & Ghi công (Credits)
 
 * **Tác quyền:** Tài liệu và nội dung giải pháp này thuộc dự án **lazylab-ptit** (Biên soạn bởi **Mạc Rô Tích**).
