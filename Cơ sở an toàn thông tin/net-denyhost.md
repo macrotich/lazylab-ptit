@@ -5,29 +5,32 @@
 #### Bước 1: 
 Trên terminal **`server`** nhập :
 ```
-sudo nano /var/named/example.com.zone
+ sudo tail -f /var/log/auth.log
 ```
-Chèn thêm dòng sau vào cuối:
+Trên terminal **`client`** nhập :
 ```
-ws3     IN      A       192.168.0.3
+ssh hank@172.20.0.3
 ```
-(Nhấn Ctrl+O rồi Ctrl+X)
 ```
-sudo nano /var/named/192.168.0.0
+yes
 ```
-Chèn thêm dòng sau vào cuối:
 ```
-13      IN      PTR     ws3
+hank21
 ```
-(Nhấn Ctrl+O rồi Ctrl+X)
 ```
-sudo systemctl restart bind9
+exit
 ```
 #### Bước 2:
-Trên terminal **`ws1`**, nhập lệnh:
+Trên terminal **`server`** nhập :
+(Nhan Ctrl+C)
 ```
-ping -c 3 ws3
+sudo less /etc/denyhosts.conf
 ```
+Trên terminal **`client`** nhập :
+```
+ ./bot.py hank
+```
+(Nhan Ctrl+C)
 
 #### Bước 3:
 Trên terminal **`ws3`** nhập lệnh:
