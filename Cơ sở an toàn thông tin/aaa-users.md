@@ -26,7 +26,7 @@ sudo passwd bob
 ```
 Nhập mật khẩu(nhập 2 lần):
 ```
-test
+lazy
 ```
 
 
@@ -41,7 +41,7 @@ sudo passwd mary
 ```
 Nhập mật khẩu(nhập 2 lần):
 ```
-test
+lazy
 ```
 
 ```
@@ -53,7 +53,7 @@ mary
 ```
 Nhập mật khẩu:
 ```
-test
+lazy
 ```
 
 ```
@@ -75,7 +75,7 @@ bob
 ```
 Nhập mật khẩu:
 ```
-test
+lazy
 ```
 
 ```
@@ -101,7 +101,7 @@ sudo passwd lisa
 ```
 Nhập mật khẩu(nhập 2 lần):
 ```
-test
+lazy
 ```
 ```
 sudo usermod -a -G admin lisa
@@ -113,14 +113,14 @@ lisa
 ```
 Nhập mật khẩu:
 ```
-test
+lazy
 ```
 
 ```
 sudo sudo userdel bob
 ```
 ```
-test
+lazy
 ```
 ## 📌 Bản quyền & Ghi công (Credits)
 
