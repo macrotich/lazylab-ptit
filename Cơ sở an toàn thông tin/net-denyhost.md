@@ -21,19 +21,29 @@ Trên terminal **`client`** nhập :
 ```
  ./bot.py hank
 ```
-(Nhan Ctrl+C)
+(Nhấn Ctrl+C)
 
 #### Bước 3:
-Trên terminal **`ws3`** nhập lệnh:
+Trên terminal **`server`** nhập :
 ```
-sudo nano /etc/resolv.conf
+echo "ALL: 172.20.0.2" | sudo tee -a /etc/hosts.allow
 ```
-Điền dòng sau vô:
 ```
-search example.com
-nameserver 192.168.0.3
+sudo iptables -D INPUT -s 172.20.0.2 -j DROP
 ```
-
+Trên terminal **`client`** nhập :
+```
+ssh hank@172.20.0.3
+```
+```
+abc
+```
+```
+hank21
+```
+```
+exit
+```
 
 ## 📌 Bản quyền & Ghi công (Credits)
 
