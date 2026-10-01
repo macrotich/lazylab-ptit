@@ -3,10 +3,6 @@
 ## Các bước thực hiện & Chuỗi lệnh (Solution)
 
 #### Bước 1: 
-Trên terminal **`server`** nhập :
-```
- sudo tail -f /var/log/auth.log
-```
 Trên terminal **`client`** nhập :
 ```
 ssh hank@172.20.0.3
@@ -21,11 +17,6 @@ hank21
 exit
 ```
 #### Bước 2:
-Trên terminal **`server`** nhập :
-(Nhan Ctrl+C)
-```
-sudo less /etc/denyhosts.conf
-```
 Trên terminal **`client`** nhập :
 ```
  ./bot.py hank
