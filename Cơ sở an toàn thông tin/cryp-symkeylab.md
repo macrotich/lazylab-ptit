@@ -5,7 +5,7 @@
 #### Bước 1: 
 Trên terminal nhập :
 ```
-echo "doan van ban" > plain.txt
+echo "qua luoi de lam" > plain.txt
 ```
 ```
 openssl aes-128-cbc -e -in plain.txt -out cipher.txt -K 0123456789ABCDEF0123456789ABCDEF -iv 00000000000000000000000000000000
