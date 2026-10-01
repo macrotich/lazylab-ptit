@@ -36,9 +36,6 @@ Trên terminal **`client`** nhập :
 ssh hank@172.20.0.3
 ```
 ```
-abc
-```
-```
 hank21
 ```
 ```
