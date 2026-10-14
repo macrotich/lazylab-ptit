@@ -1,5 +1,5 @@
 
-Dưới đây là tài liệu hướng dẫn hoàn chỉnh theo định dạng **Markdown**, được tối ưu bố cục rõ ràng để bạn copy trực tiếp tạo file `README.md` hoặc note đẩy lên GitHub:
+
 
 ```markdown
 # Hướng Dẫn Thực Hành Lab: Exploring Unix Logs on CentOS (Labtainer)
