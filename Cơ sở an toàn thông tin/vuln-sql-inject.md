@@ -22,7 +22,7 @@ SELECT * FROM credential;
 
 
 #### Bước 2:
-Trên terminal **`client`**, nhập lệnh:
+Trên terminal **`client`**, nhập lệnh(2 lần):
 ```
 curl 'http://www.SEEDLabSQLInjection.com/unsafe_credential.php?EID=10000&Password=111'
 ```
